@@ -6,13 +6,13 @@
       <div class="col-lg-8">
         <div class="site-project-header-content">
           <h1>
-            Ofereujemy dystrybutory dla <span> firm </span> i <span>użytkowników domowych </span>
+            {{ .Title | safeHTML }}
           </h1>
         </div>
       </div>
       <div class="col-lg-4">
         <a href="#project" class="site-project-header-action scroll-to">
-          <span>Przewiń w dół</span>
+          <span>Sprawdź</span>
           <img src="{{ "images/arrow-down.svg" | absURL }}" alt="arrow-down">
         </a>
       </div>
@@ -32,7 +32,7 @@
           <div class="site-project-item-content">
             <span>{{ delimit .Params.category ", " }}</span>
             <h3>{{ .Title }}</h3>
-            <a href="{{ .Permalink }}" class="read-more">Pokaż stronę produktu</a>
+            <a href="{{ .Permalink }}" class="read-more">Sprawdź</a>
           </div>
         </div>
       </div>
